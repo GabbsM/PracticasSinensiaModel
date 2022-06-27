@@ -1,6 +1,7 @@
 package com.sinensia.practicaModel.estaciones;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Objects;
 
 public class Estacion implements Serializable {
@@ -9,6 +10,19 @@ public class Estacion implements Serializable {
     private String nombre;
     private Direccion direccion;
     private Enum<Estado> estado;
+    ArrayList<Lectura> lecturas;
+
+    public ArrayList<Lectura> getLecturas() {
+        return lecturas;
+    }
+
+    public void setLecturas(ArrayList<Lectura> lecturas) {
+        this.lecturas = lecturas;
+    }
+
+    public Estacion(ArrayList<Lectura> lecturas) {
+        this.lecturas = lecturas;
+    }
 
     public Estacion() {
 

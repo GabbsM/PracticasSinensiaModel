@@ -1,13 +1,14 @@
 package com.sinensia.practicaModel.estaciones;
 
 import java.sql.Timestamp;
+import java.util.Date;
 
 public class Lectura {
 
     private double temperatura;
     private double presionAtmosferica;
     private double velocidadViento;
-    private Timestamp fechaHora;
+    private Date fechaHora;
 
     public Lectura() {
 
@@ -37,7 +38,7 @@ public class Lectura {
         velocidadViento = velocidadViento;
     }
 
-    public Timestamp getFechaHora() {
+    public Date getFeAchaHora() {
         return fechaHora;
     }
 
